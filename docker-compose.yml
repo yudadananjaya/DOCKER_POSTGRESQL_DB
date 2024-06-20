@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:14-alpine
+    container_name: postgresql_db
+    ports:
+      - "5433:5432"
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=pgadmin"
+      - "POSTGRES_DB=tes_db"
